@@ -1,0 +1,35 @@
+name: OneSleepPlus
+version: '${version}'
+main: dev.eren.oneplayersleep.OneSleepPlusPlugin
+description: One Player Sleep and Single Player Sleep with configurable counts, percentages, and smart night catch-up.
+author: Eren
+api-version: '1.16'
+folia-supported: true
+softdepend: [PlaceholderAPI, floodgate, Geyser-Spigot]
+
+commands:
+  onesleepplus:
+    description: OneSleepPlus one player sleep management command.
+    usage: /<command> <status|reload|set|test>
+    aliases: [osp, onesleep, oneplayersleep, singleplayersleep, opsleep]
+
+permissions:
+  onesleepplus.admin:
+    description: Grants all OneSleepPlus management permissions.
+    default: op
+    children:
+      onesleepplus.reload: true
+      onesleepplus.set: true
+      onesleepplus.test: true
+      onesleepplus.status: true
+  onesleepplus.reload:
+    default: op
+  onesleepplus.set:
+    default: op
+  onesleepplus.test:
+    default: op
+  onesleepplus.status:
+    default: true
+  onesleepplus.ignore:
+    description: Excludes the player from the eligible player count.
+    default: false

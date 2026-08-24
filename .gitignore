@@ -1,0 +1,59 @@
+# Gradle build cache and generated output
+.gradle/
+build/
+out/
+
+# IDE/editor metadata
+.idea/
+.vscode/
+.settings/
+.classpath
+.project
+*.iml
+*.swp
+*.swo
+*~
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Temporary publishing material and raw media
+PUBLISHING_DRAFT.md
+recordings/
+*.mkv
+*.mp4
+*.mov
+
+# Local Minecraft test-server files (if a server is placed in this repository)
+/server/
+/run/
+/plugins/
+/logs/
+/crash-reports/
+/world/
+/world_nether/
+/world_the_end/
+/eula.txt
+/server.properties
+/ops.json
+/whitelist.json
+/banned-players.json
+/banned-ips.json
+/usercache.json
+/commands.yml
+/bukkit.yml
+/spigot.yml
+/paper-global.yml
+/paper-world-defaults.yml
+*.log
+hs_err_pid*
+
+# Keep gradle/wrapper/gradle-wrapper.jar tracked; it is required by ./gradlew.

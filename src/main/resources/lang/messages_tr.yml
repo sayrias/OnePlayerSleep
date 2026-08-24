@@ -1,0 +1,28 @@
+# OneSleepPlus Türkçe mesajlar
+# Klasik renk kodları (&a) ve hex renkler (&#RRGGBB) desteklenir.
+
+prefix: "&8[&#8AB4F8OneSleepPlus&8] "
+sleep-started: "&#8AB4F8☾ &f{player} &7uyumaya başladı &8• &#A7F3D0{sleeping}&7/&#A7F3D0{required} &8• &f{remaining} kişi kaldı"
+threshold-reached: "&#FDE68A☀ &fYeterli kişi uyuyor &8• &7Sabah oluyor..."
+countdown: "&#FDE68A☀ &fSabaha &#FBBF24{seconds} &fsaniye kaldı &8• &7{sleeping}/{required}"
+countdown-cancelled: "&#FCA5A5☁ &7Uyuyan kişi sayısı azaldı, geri sayım iptal edildi."
+morning: "&#FDE68A☀ &fGünaydın! &7Gece başarıyla atlandı."
+
+# Floodgate/Geyser üzerinden algılanan Bedrock oyuncuları için sade sürümler.
+bedrock-sleep-started: "&b{player} uyuyor - {sleeping}/{required} ({remaining} kaldı)"
+bedrock-countdown: "&eSabaha {seconds} saniye - {sleeping}/{required}"
+
+no-permission: "&cBu komut için yetkin yok."
+reload-success: "&aYapılandırma ve dil dosyaları yeniden yüklendi."
+invalid-threshold: "&cGeçersiz eşik. Örnek: 2 veya 50%"
+threshold-set: "&a{world} dünyasının uyku eşiği &f{threshold} &aolarak ayarlandı."
+world-not-found: "&cDünya bulunamadı: &f{world}"
+status: "&b{world}&7: &f{sleeping}/{required} uyuyor&7, &f{eligible} uygun oyuncu&7, eşik &f{threshold}&7{clamped}"
+status-clamped: " &8(&7mevcut oyuncu sayısına sınırlandı&8)"
+test-message: "&#8AB4F8☾ &fBildirim testi başarılı &8• &7Java/Bedrock uyumlu"
+
+help-header: "&#8AB4F8OneSleepPlus &7komutları:"
+help-status: "&f/{label} status [dünya] &8- &7Uyku durumunu gösterir"
+help-set: "&f/{label} set <2|50%> [dünya] &8- &7Dünya eşiğini değiştirir"
+help-reload: "&f/{label} reload &8- &7Yapılandırmayı ve dil dosyalarını yeniler"
+help-test: "&f/{label} test &8- &7Bildirim görünümünü test eder"

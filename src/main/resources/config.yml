@@ -1,0 +1,58 @@
+config-version: 1
+
+# Display language. Bundled values: en, tr
+# Custom languages can be added as lang/messages_<code>.yml.
+language: "en"
+
+sleep:
+  # A whole number (2) or a percentage ("50%").
+  # If a fixed number is above the eligible population, it is automatically clamped.
+  # Example: threshold 5 with 3 eligible players requires all 3, never an impossible 5.
+  threshold: "1"
+  percentage-rounding: CEIL
+  countdown-seconds: 3
+  morning-time: 0
+  reset-weather: true
+  include-creative: true
+  require-night-or-thunder: true
+
+worlds:
+  default-enabled: true
+  disabled:
+    - world_nether
+    - world_the_end
+  # Per-world values override the global sleep settings.
+  overrides: {}
+  # Example:
+  # overrides:
+  #   world:
+  #     enabled: true
+  #     threshold: "50%"
+
+notifications:
+  action-bar: true
+  chat: false
+  sound: true
+  sound-name: BLOCK_NOTE_BLOCK_CHIME
+  sound-volume: 0.8
+  sound-pitch: 1.2
+
+furnace-catch-up:
+  enabled: true
+  # Only the ticks actually skipped from the current time to morning are simulated.
+  # Sleeping late in the night therefore advances furnaces less than sleeping early.
+  loaded-chunks-only: true
+  max-furnaces-per-skip: 500
+  max-skipped-ticks: 12000
+  furnace: true
+  smoker: true
+  blast-furnace: true
+  # Optional support for custom or newly added fuels. Values are burn ticks.
+  custom-fuel-burn-times: {}
+  # Example: {CUSTOM_FUEL: 1600}
+
+integrations:
+  placeholder-api: true
+  geyser: true
+  floodgate: true
+  bedrock-simple-messages: true

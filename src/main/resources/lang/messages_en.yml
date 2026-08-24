@@ -1,0 +1,28 @@
+# OneSleepPlus English messages
+# Legacy color codes (&a) and hex colors (&#RRGGBB) are supported.
+
+prefix: "&8[&#8AB4F8OneSleepPlus&8] "
+sleep-started: "&#8AB4F8☾ &f{player} &7is now sleeping &8• &#A7F3D0{sleeping}&7/&#A7F3D0{required} &8• &f{remaining} more needed"
+threshold-reached: "&#FDE68A☀ &fEnough players are sleeping &8• &7Morning is on its way..."
+countdown: "&#FDE68A☀ &fMorning arrives in &#FBBF24{seconds} &fseconds &8• &7{sleeping}/{required}"
+countdown-cancelled: "&#FCA5A5☁ &7Not enough players are sleeping; the countdown was cancelled."
+morning: "&#FDE68A☀ &fGood morning! &7The night was skipped successfully."
+
+# Simplified action-bar variants for Bedrock players detected through Floodgate/Geyser.
+bedrock-sleep-started: "&b{player} is sleeping - {sleeping}/{required} ({remaining} needed)"
+bedrock-countdown: "&eMorning in {seconds} seconds - {sleeping}/{required}"
+
+no-permission: "&cYou do not have permission to use this command."
+reload-success: "&aConfiguration and language files reloaded."
+invalid-threshold: "&cInvalid threshold. Examples: 2 or 50%"
+threshold-set: "&aThe sleep threshold for &f{world} &awas set to &f{threshold}&a."
+world-not-found: "&cWorld not found: &f{world}"
+status: "&b{world}&7: &f{sleeping}/{required} sleeping&7, &f{eligible} eligible players&7, threshold &f{threshold}&7{clamped}"
+status-clamped: " &8(&7clamped to the current player count&8)"
+test-message: "&#8AB4F8☾ &fNotification test successful &8• &7Java/Bedrock compatible"
+
+help-header: "&#8AB4F8OneSleepPlus &7commands:"
+help-status: "&f/{label} status [world] &8- &7View sleep progress"
+help-set: "&f/{label} set <2|50%> [world] &8- &7Change a world's threshold"
+help-reload: "&f/{label} reload &8- &7Reload configuration and language files"
+help-test: "&f/{label} test &8- &7Preview the notification style"
