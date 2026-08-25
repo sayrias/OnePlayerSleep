@@ -27,6 +27,8 @@ Thumbs.db
 
 # Temporary publishing material and raw media
 PUBLISHING_DRAFT.md
+SPIGOT_DESCRIPTION.bbcode
+CURSEFORGE_DESCRIPTION.html
 recordings/
 *.mkv
 *.mp4
